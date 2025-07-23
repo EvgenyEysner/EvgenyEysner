@@ -1,5 +1,7 @@
 name: Update Stats
 on:
+  push:
+    branches: [ main ]
   schedule:
     - cron: "0 0 * * *"  # Täglich aktualisieren
 jobs:
