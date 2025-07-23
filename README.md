@@ -36,8 +36,10 @@ I'm a passionate Full Stack Developer with a strong focus on Python and its fram
 
 ## 📈 Activity Stats
 <p>
-  <img src="https://github-readme-stats.vercel.app/api?username=EvgenyEysner&show_icons=true&theme=dracula&count_private=true" alt="GitHub Stats"/>
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=EvgenyEysner&theme=github-dark-blue" alt="GitHub Streak"/>
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=EvgenyEysner&theme=github_dark" alt="GitHub Stats"/>
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=EvgenyEysner&theme=github_dark&random=${Math.random()}`;" alt="GitHub Stats"/>
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=EvgenyEysner&theme=github_dark" alt="GitHub Stats"/>
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=EvgenyEysner&theme=github_dark" alt="GitHub Streak"/>
 </p>
 
 ---
