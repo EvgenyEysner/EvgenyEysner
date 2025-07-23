@@ -1,0 +1,14 @@
+name: Update Stats
+on:
+  schedule:
+    - cron: "0 0 * * *"  # Täglich aktualisieren
+jobs:
+  update-stats:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: anuraghazra/github-readme-stats@main
+        env:
+          GITHUB_TOKEN: ${{ secrets.PERSONAL_GITHUB_TOKEN }}  # Füge den Token als Secret hinzu
+        with:
+          token: ${{ secrets.PERSONAL_GITHUB_TOKEN }}
+          private: true  # Private Repos einbeziehen
