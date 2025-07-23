@@ -44,22 +44,11 @@ I'm a passionate Full Stack Developer with a strong focus on Python and its fram
 
 ---
 
-## 🌱 Currently Learning
-
-- Cloud technologies (AWS, Azure)
-- Advanced DevOps & Automation
-- Open Source Collaboration
-
----
-
 ## 📫 How to reach me
 
 - Email: evgeny.eysner@gmail.com
 - LinkedIn: [Evgeny Eysner](https://www.linkedin.com/in/evgeny-eysner-4b3744222/)
 - GitHub: [EvgenyEysner](https://github.com/EvgenyEysner)
+- Website: [softeis.dev](https://softeis.dev)
 
 ---
-
-<p align="center">
-  <i>Let's connect and build something amazing together!</i>
-</p>
