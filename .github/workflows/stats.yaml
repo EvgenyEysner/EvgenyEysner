@@ -1,16 +1,26 @@
-name: Update Stats
+name: Generate GitHub Profile Summary Cards
+
 on:
-  push:
-    branches: [ main ]
   schedule:
-    - cron: "0 0 * * *"  # Täglich aktualisieren
+    - cron: "0 0 * * *" # Runs daily at midnight UTC
+  workflow_dispatch:
+
 jobs:
-  update-stats:
-    runs-on: ubuntu-latest
+  build:
+    runs-on: self-hosted
+    name: generate-github-profile-summary-cards
+    permissions:
+      contents: write
     steps:
-      - uses: anuraghazra/github-readme-stats@v2
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Generate GitHub Profile Summary Cards
+        uses: vn7n24fzkq/github-profile-summary-cards@release
         env:
-          GITHUB_TOKEN: ${{ secrets.PERSONAL_GITHUB_TOKEN }}  # Füge den Token als Secret hinzu
+          GITHUB_TOKEN: ${{ secrets.PERSONAL_GITHUB_TOKEN }}
         with:
-          token: ${{ secrets.PERSONAL_GITHUB_TOKEN }}
-          private: true  # Private Repos einbeziehen
+          USERNAME: ${{ github.repository_owner }}
+          BRANCH_NAME: "main"
+          UTC_OFFSET: 5
+          AUTO_PUSH: true
