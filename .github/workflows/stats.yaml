@@ -14,8 +14,6 @@ jobs:
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v4
-        with:
-          token: ${{ secrets.PERSONAL_GITHUB_TOKEN }}  # Wichtig: Token hier übergeben
 
       - name: Generate GitHub Profile Summary Cards
         uses: vn7n24fzkq/github-profile-summary-cards@release
@@ -23,6 +21,4 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.PERSONAL_GITHUB_TOKEN }}
         with:
           USERNAME: ${{ github.repository_owner }}
-          BRANCH: "main"  # Korrigiert von BRANCH_NAME zu BRANCH
-          UTC_OFFSET: 5
-          AUTO_PUSH: true
+          UTC_OFFSET: 1  # Deutschland (UTC+1 im Winter, UTC+2 im Sommer)
