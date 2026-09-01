@@ -1,6 +1,9 @@
 <div align="center">
-  <h1>Hi there, I'm Evgeny Eysner 👋</h1>
-  <h2>Full Stack Developer - Specialized in Python | Django | FastApi | React | Vite</h2>
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="./assets/dark.svg">
+    <source media="(prefers-color-scheme: light)" srcset="./assets/light.svg">
+    <img src="./assets/dark.svg" alt="Evgeny Eysner — Full Stack Developer" width="100%" />
+  </picture>
 </div>
 
 ---
