@@ -227,10 +227,6 @@ def social_icon(name: str) -> str:
             "M20.45 20.45h-3.56v-5.57c0-1.33-.03-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.34V9h3.41v1.56h.05"
             "c.47-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28z"
         )
-    if name == "x":
-        return (
-            "M18.9 1.5h3.4l-7.4 8.5 8.7 11.5h-6.8l-5.3-6.9-6.1 6.9H1.6l8-9.1L1.3 1.5h7l4.4 5.7 6.2-5.7zm-1.2 17.9h1.9L6.4 3.4H4.4z"
-        )
     if name == "web":
         return (
             "M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20zm0 0c2.5 2.6 4 6.1 4 10s-1.5 7.4-4 10m0-20c-2.5 2.6-4 6.1-4 10s1.5 7.4 4 10"
@@ -333,7 +329,6 @@ def build(theme: dict, ascii_lines: list[str], mode: str) -> str:
     socials = [
         ("github", "GitHub"),
         ("linkedin", "LinkedIn"),
-        ("x", "Twitter"),
         ("web", "Portfolio"),
     ]
 
@@ -519,7 +514,7 @@ def build(theme: dict, ascii_lines: list[str], mode: str) -> str:
     )
 
     # social symbols
-    for key in ("github", "linkedin", "x", "web"):
+    for key in ("github", "linkedin", "web"):
         fill = "none" if key == "web" else t["text"]
         stroke_extra = (
             f' fill="none" stroke="{t["text"]}" stroke-width="1.7" stroke-linecap="round"'
