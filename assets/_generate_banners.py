@@ -12,8 +12,8 @@ W, H = 1180, 610
 PHRASES = [
     "Full Stack Developer",
     "Python & Django",
-    "FastAPI Engineer",
-    "React + Vite",
+    "FastAPI",
+    "React",
     "Linux & DevOps",
 ]
 
@@ -23,7 +23,6 @@ SKILLS = [
     "FastAPI",
     "React",
     "JavaScript",
-    "Vite",
     "Docker",
     "PostgreSQL",
     "Linux",
@@ -34,9 +33,9 @@ SKILLS = [
 
 INFO = [
     ("LOCATION", "Oldenburg, Germany", "pin"),
-    ("STUDIO", "Softeis", "studio"),
+    ("STUDIO", "softeis.dev", "studio"),
     ("FOCUS", "Python · Django · FastAPI", "spark"),
-    ("PORTFOLIO", "softeis.dev", "link"),
+    ("PORTFOLIO", "https://softeis.dev", "link"),
     ("EMAIL", "evgeny.eysner@gmail.com", "mail"),
 ]
 
@@ -60,8 +59,8 @@ def make_ascii(cols: int = 46, rows: int = 30) -> list[str]:
         "  :@@@@@@@@@@@@@@@@%  +@@@@@@@@@@@@@@@@+",
         "  :%%%%%%%%%%%%%%%%#  +%%%%%%%%%%%%%%%%=",
         "",
-        "       evgeny eysner",
-        "       softeis  ·  oldenburg",
+        "       Evgeny Eysner",
+        "       softeis.dev | Oldenburg",
     ]
     width = max(len(s) for s in block)
     return [s.ljust(width) for s in block]
